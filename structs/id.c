@@ -12,8 +12,25 @@ void printPerson(struct person p){
   printf("name = %s\n", p.name);
   printf("age = %d\n", p.age);
 }
+// constructor
+struct person *createPerson(char *name, int age){
+  struct person *newPerson = malloc(sizeof(struct person));
+  strcpy(newPerson->name, name);
+  newPerson->age = age;
+  return newPerson;
+}
 
 int main(){
-  // TODO: initialize three person structs in three different ways
+  // initialize three person structs in three different ways
+  struct person p1 = {"Alice", 50};
+  printPerson(p1);
+
+  struct person p2;
+  strcpy(p2.name, "Bob");
+  p2.age = 37;
+  printPerson(p2);
+
+  struct person *p3 = createPerson("Clark", 21);
+  printPerson(*p3);
   return 0;
 }

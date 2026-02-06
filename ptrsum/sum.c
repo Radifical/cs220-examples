@@ -3,7 +3,11 @@
 
 int sumArr(int ary[], int len){
   // TODO: sum the entries in the array using pointer notation
-  return 0; 
+  int sum = 0;
+  for (int *temp = ary; temp < (ary + len); temp++){
+    sum += *temp;
+  }
+  return sum; 
 }
 
 int main(int argc, char *argv[]){

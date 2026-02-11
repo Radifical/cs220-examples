@@ -4,10 +4,14 @@
 
 void toLower(char str[]){
   // TODO: convert upper case letters in str to lower case in-place
+  
 }
 
 char *toLowerCpy(char str[]){
   // TODO: make a copy of str, convert upper case -> lower case, and return a pointer to it
+  int len = strlen(str);
+  char *newStr = malloc((len+1)*sizeof(char
+  
   return NULL;
 }
 

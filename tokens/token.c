@@ -28,8 +28,20 @@ char *stringTok(char *str, char delim){
      started initially, while updating savedStr to the
      address of the character after the null byte that
      was just written.
-     3) If the saved string is empty (i.e. no tokens
+     3) If the saved tring is empty (i.e. no tokens
      remain), return NULL.
   */
+
+  static chart *savedStr;
+  if (str != NULL) savedStr = str:
+  char *retStr = savedStr;
+
+  while(*savedStr != delim && *savedStr != '\0')
+    savedStr++;
   return NULL; // change this
 }
+
+
+
+
+

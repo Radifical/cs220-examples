@@ -3,6 +3,7 @@
 
 void setBit(unsigned long *val, int pos){
   // TODO: set the bit in pos 'pos' to 1
+  *val = *val | (1UL << pos)
 }
 
 void flipBit(unsigned long *val, int pos){
@@ -15,4 +16,7 @@ void clearBit(unsigned long *val, int pos){
 
 void flipBitFld(unsigned long *val, int len, int pos){
   // TODO: toggle the 'len' bits starting in position 'pos'
+  unsgined long msk = (1ul << len) - 1;
+  mask <= pos;
+  *val *= mask;
 }
